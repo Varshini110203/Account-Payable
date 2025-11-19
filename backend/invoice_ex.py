@@ -1,389 +1,242 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-
-# coding: utf-8
-
-# -------------------------------------------------------------------------
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License. See License.txt in the project root for
-# license information.
-# --------------------------------------------------------------------------
-
-# coding: utf-8
-
-# -------------------------------------------------------------------------
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License. See License.txt in the project root for
-# license information.
-# --------------------------------------------------------------------------
-
 """
-This code sample shows Prebuilt Invoice operations with the Azure AI Document Intelligence client library. 
-The async versions of the samples require Python 3.8 or later.
-
-To learn more, please visit the documentation - Quickstart: Document Intelligence (formerly Form Recognizer) SDKs
-https://learn.microsoft.com/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?pivots=programming-language-python
+Invoice Processing with Azure Document Intelligence and PREAP Output
 """
 
 import os
+import time
 import json
-from datetime import datetime, UTC
-import uuid
 from pathlib import Path
-from copy import deepcopy
+from typing import Tuple, Optional, Dict, Any
+from dotenv import find_dotenv, load_dotenv
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.documentintelligence import DocumentIntelligenceClient
-from azure.ai.documentintelligence.models import AnalyzeDocumentRequest, AnalyzeResult
-from dotenv import find_dotenv, load_dotenv
+from azure.ai.documentintelligence.models import AnalyzeResult
 
-"""
-Remember to remove the key from your code when you're done, and never post it publicly. For production, use
-secure methods to store and access your credentials. For more information, see 
-https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-security?tabs=command-line%2Ccsharp#environment-variables-and-application-configuration
-"""
+from preap_builder import PreapBuilder
 
-load_dotenv(find_dotenv())
 
-endpoint = os.environ["DOCUMENTINTELLIGENCE_ENDPOINT"]
-key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
-
-def build_preap_from_di(analyze_result, source_info=None):
-    """
-    Build a PREAP (Prebuilt Result Adapter Parser) JSON object from Document Intelligence result.
-    """
+class InvoiceProcessor:
+    """Process invoices using Azure Document Intelligence"""
     
-    # Convert to dictionary if it's a SDK object
-    if hasattr(analyze_result, "to_dict"):
-        di_result = analyze_result.to_dict()
-    else:
-        di_result = analyze_result
-
-    # Build PREAP structure
-    preap = {
-        "preap_version": "1.0",
-        "preap_id": str(uuid.uuid4()),
-        "timestamp": datetime.now(UTC).isoformat(),
-        "source": source_info or {},
-        "metadata": {
-            "apiVersion": di_result.get("apiVersion"),
-            "modelId": di_result.get("modelId"),
-            "contentFormat": di_result.get("contentFormat", "text")
-        },
-        "content": di_result.get("content", ""),
-        "pages": deepcopy(di_result.get("pages", [])),
-        "documents": deepcopy(di_result.get("documents", []))
-    }
-    
-    return preap
-
-def save_preap_to_file(preap_data, file_path):
-    """
-    Save PREAP data to JSON file.
-    """
-    try:
-        # Create parent directory if it doesn't exist
-        file_path.parent.mkdir(parents=True, exist_ok=True)
-        
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(preap_data, f, indent=2, ensure_ascii=False, default=str)
-        
-        print(f"   💾 File saved successfully: {file_path}")
-        return str(file_path)
-    except Exception as e:
-        print(f"   ❌ Error saving file: {e}")
-        return None
-
-def extract_invoice_fields_to_dict(invoices):
-    """
-    Extract invoice fields to a structured dictionary for easy JSON serialization.
-    """
-    result = {
-        "documents": []
-    }
-    
-    for idx, invoice in enumerate(invoices.documents):
-        invoice_data = {
-            "document_number": idx + 1,
-            "fields": {}
-        }
-        
-        # Helper function to extract field data
-        def extract_field(field_name, field_obj, value_type="value"):
-            if field_obj:
-                field_data = {
-                    "value": getattr(field_obj, value_type, None),
-                    "confidence": field_obj.confidence
-                }
-                
-                # Handle specific value types
-                if value_type == "value_currency":
-                    field_data["value"] = field_obj.value_currency.amount if field_obj.value_currency else None
-                    field_data["currency"] = field_obj.value_currency.currency_symbol if field_obj.value_currency else None
-                elif value_type == "value_address":
-                    field_data["value"] = field_obj.value_address
-                elif value_type == "value_date":
-                    field_data["value"] = field_obj.value_date
-                
-                return field_data
-            return None
-        
-        # Extract all fields
-        fields_to_extract = [
-            ("VendorName", "value_string"),
-            ("VendorAddress", "value_address"),
-            ("VendorAddressRecipient", "value_string"),
-            ("CustomerName", "value_string"),
-            ("CustomerId", "value_string"),
-            ("CustomerAddress", "value_address"),
-            ("CustomerAddressRecipient", "value_string"),
-            ("InvoiceId", "value_string"),
-            ("InvoiceDate", "value_date"),
-            ("InvoiceTotal", "value_currency"),
-            ("DueDate", "value_date"),
-            ("PurchaseOrder", "value_string"),
-            ("BillingAddress", "value_address"),
-            ("BillingAddressRecipient", "value_string"),
-            ("ShippingAddress", "value_address"),
-            ("ShippingAddressRecipient", "value_string"),
-            ("SubTotal", "value_currency"),
-            ("TotalTax", "value_currency"),
-            ("PreviousUnpaidBalance", "value_currency"),
-            ("AmountDue", "value_currency"),
-            ("ServiceStartDate", "value_date"),
-            ("ServiceEndDate", "value_date"),
-            ("ServiceAddress", "value_address"),
-            ("ServiceAddressRecipient", "value_string"),
-            ("RemittanceAddress", "value_address"),
-            ("RemittanceAddressRecipient", "value_string")
-        ]
-        
-        for field_name, value_type in fields_to_extract:
-            field_obj = invoice.fields.get(field_name)
-            if field_obj:
-                invoice_data["fields"][field_name] = extract_field(field_name, field_obj, value_type)
-        
-        # Extract items
-        items_field = invoice.fields.get("Items")
-        if items_field and hasattr(items_field, 'value_array') and items_field.value_array:
-            invoice_data["items"] = []
-            for item_idx, item in enumerate(items_field.value_array):
-                item_data = {
-                    "item_number": item_idx + 1
-                }
-                
-                item_fields_to_extract = [
-                    ("Description", "value_string"),
-                    ("Quantity", "value_number"),
-                    ("Unit", "value_number"),
-                    ("UnitPrice", "value_currency"),
-                    ("ProductCode", "value_string"),
-                    ("Date", "value_date"),
-                    ("Tax", "value_string"),
-                    ("Amount", "value_currency")
-                ]
-                
-                for field_name, value_type in item_fields_to_extract:
-                    field_obj = item.value_object.get(field_name)
-                    if field_obj:
-                        item_data[field_name] = extract_field(field_name, field_obj, value_type)
-                
-                invoice_data["items"].append(item_data)
-        
-        result["documents"].append(invoice_data)
-    
-    return result
-
-def process_single_invoice(file_path, document_intelligence_client):
-    """
-    Process a single invoice file and return the analysis results.
-    """
-    try:
-        print(f"\n🔍 Processing: {file_path.name}")
-        
-        # Check if file exists and is readable
-        if not file_path.exists():
-            return None, f"File does not exist: {file_path}"
-        
-        # Read the file content
-        with open(file_path, "rb") as f:
-            file_content = f.read()
-        
-        print(f"   📄 File size: {len(file_content)} bytes")
-        
-        # Analyze the document using the correct method signature
-        print("   ⏳ Analyzing with Azure Document Intelligence...")
-        poller = document_intelligence_client.begin_analyze_document(
-            "prebuilt-invoice",
-            body=file_content,
-            content_type="application/octet-stream"
+    def __init__(self, endpoint: str, key: str):
+        self.client = DocumentIntelligenceClient(
+            endpoint=endpoint, 
+            credential=AzureKeyCredential(key)
         )
-        invoices = poller.result()
-        print("   ✅ Analysis completed successfully")
+        self.preap_builder = PreapBuilder()
+    
+    def process_invoice(self, file_path: Path) -> Tuple[Optional[Dict[str, Any]], Optional[str]]:
+        """Process a single invoice file"""
+        try:
+            print(f"   📄 Reading file: {file_path.name}")
+            if not file_path.exists():
+                return None, f"File not found: {file_path}"
+            
+            with open(file_path, "rb") as f:
+                file_content = f.read()
+
+            # Analyze with Azure Document Intelligence
+            poller = self.client.begin_analyze_document(
+                "prebuilt-invoice",
+                body=file_content,
+                content_type="application/octet-stream"
+            )
+            
+            # Show progress for long-running operations
+            while not poller.done():
+                print(" Still processing...")
+            
+            analyze_result = poller.result()
+            
+            # Build PREAP format
+            source_info = {
+                "file_path": str(file_path),
+                "file_name": file_path.name,
+                "file_size": len(file_content),
+                "document_type": "invoice",
+            }
+            
+            preap_data = self.preap_builder.build_from_di_result(analyze_result, source_info)
+            return preap_data, None
+            
+        except Exception as e:
+            print(f"Error processing {file_path.name}: {str(e)}")
+            return None, str(e)
+
+
+class InvoiceBatchProcessor:
+    """Batch processor for multiple invoice files"""
+    
+    def __init__(self, processor: InvoiceProcessor, output_dir: Path):
+        self.processor = processor
+        self.output_dir = output_dir
+    
+    def process_batch(self, input_dir: Path) -> Dict[str, Any]:
+        """Process all PDF files in input directory"""
+        pdf_files = list(input_dir.glob("*.pdf"))
         
-        # Create PREAP format
-        source_info = {
-            "file_path": str(file_path),
-            "file_name": file_path.name,
-            "file_size": len(file_content),
-            "document_type": "invoice",
-            "analyzed_at": datetime.now(UTC).isoformat()
+        if not pdf_files:
+            print(f"No PDF files found in {input_dir}")
+            return {"error": f"No PDF files found in {input_dir}"}
+        
+        print(f"Found {len(pdf_files)} PDF files to process")
+        
+        results = {
+            "total_files": len(pdf_files),
+            "successful": 0,
+            "failed": 0,
+            "skipped": 0,
+            "processed_files": []
         }
         
-        preap_data = build_preap_from_di(invoices, source_info)
-        extracted_data = extract_invoice_fields_to_dict(invoices)
+        for i, pdf_file in enumerate(pdf_files, 1):
+            print(f"\n[{i}/{len(pdf_files)}] Processing: {pdf_file.name}")
+            file_result = self._process_single_file(pdf_file)
+            results["processed_files"].append(file_result)
+            
+            if file_result["status"] == "success":
+                results["successful"] += 1
+            elif file_result["status"] == "failed":
+                results["failed"] += 1
+            else:
+                results["skipped"] += 1
         
-        # Combine both for comprehensive output in PREAP format
-        comprehensive_output = {
-            "preap_metadata": {
-                "preap_version": "1.0",
-                "preap_id": str(uuid.uuid4()),
-                "timestamp": datetime.now(UTC).isoformat(),
-                "source": source_info
-            },
-            "extracted_data": extracted_data,
-            "full_analysis": preap_data
-        }
+        self._save_summary(results)
+        return results
+    
+    def _process_single_file(self, pdf_file: Path) -> Dict[str, Any]:
+        """Process a single PDF file"""
+        json_filename = f"{pdf_file.stem}.json"
+        json_path = self.output_dir / json_filename
         
-        return comprehensive_output, None
+        # Skip if already processed
+        if json_path.exists():
+            print(f"JSON already exists, skipping: {json_filename}")
+            return {
+                "file": pdf_file.name,
+                "status": "skipped",
+                "reason": "JSON already exists",
+                "json_output": json_filename
+            }
         
+        # Process invoice
+        preap_data, error = self.processor.process_invoice(pdf_file)
+        
+        if preap_data:
+            if self.processor.preap_builder.save_to_file(preap_data, json_path):
+                vendor = self._get_vendor_name(preap_data)
+                print(f" Successfully processed and saved: {json_filename}")
+                print(f" Vendor: {vendor}")
+                return {
+                    "file": pdf_file.name,
+                    "status": "success",
+                    "json_output": json_filename,
+                    "vendor": vendor
+                }
+            else:
+                print(f"Failed to save JSON for: {pdf_file.name}")
+                return {
+                    "file": pdf_file.name,
+                    "status": "failed",
+                    "error": "Failed to save JSON file"
+                }
+        else:
+            print(f"Failed to process {pdf_file.name}: {error}")
+            return {
+                "file": pdf_file.name,
+                "status": "failed",
+                "error": error
+            }
+    
+    def _get_vendor_name(self, preap_data: Dict[str, Any]) -> str:
+        """Extract vendor name from PREAP data"""
+        try:
+            documents = preap_data["extracted_data"]["documents"]
+            if documents:
+                return documents[0]["fields"].get("VendorName", {}).get("value", "N/A")
+        except (KeyError, IndexError):
+            pass
+        return "N/A"
+    
+    def _save_summary(self, results: Dict[str, Any]):
+        """Save processing summary"""
+        summary_file = self.output_dir / "processing_summary.json"
+        try:
+            with open(summary_file, 'w', encoding='utf-8') as f:
+                json.dump(results, f, indent=2, ensure_ascii=False)
+            print(f"Processing summary saved: {summary_file}")
+        except Exception as e:
+            print(f"Failed to save summary: {e}")
+
+
+def validate_environment() -> bool:
+    """Validate that all required environment variables are set"""
+    required_vars = ["DOCUMENTINTELLIGENCE_ENDPOINT", "DOCUMENTINTELLIGENCE_API_KEY"]
+    missing_vars = [var for var in required_vars if not os.getenv(var)]
+    
+    if missing_vars:
+        print("Missing required environment variables:")
+        for var in missing_vars:
+            print(f"   - {var}")
+        print("\nPlease set these variables in your .env file or environment.")
+        return False
+    return True
+
+
+def validate_paths(input_folder: Path, output_folder: Path) -> bool:
+    """Validate that input and output paths are accessible"""
+    if not input_folder.exists():
+        print(f"Input folder not found: {input_folder}")
+        print("Please check the path and make sure the folder exists.")
+        return False
+    
+    try:
+        output_folder.mkdir(parents=True, exist_ok=True)
+        print(f"Output folder created/verified: {output_folder}")
+        return True
     except Exception as e:
-        print(f"   ❌ Error during processing: {e}")
-        return None, str(e)
+        print(f"Cannot create output folder: {e}")
+        return False
+
 
 def main():
-    # Define the absolute folder paths
-    input_folder_path = Path(r"C:\Varshini\Document-Review\backend\Finance_AP\AP Invoice Samples")
-    output_folder_path = Path(r"C:\Varshini\Document-Review\backend\preap_output")
+    """Main execution function"""    
+    # Load environment variables
+    load_dotenv(find_dotenv())
     
-    print("🚀 Starting Invoice Processing...")
-    print(f"📂 Input folder: {input_folder_path}")
-    print(f"📂 Output folder: {output_folder_path}")
+    # Configuration
+    input_folder = Path("Finance_AP\AP Invoice Samples")
+    output_folder = Path("backend\preap_output")
     
-    # Check if input folder exists
-    if not input_folder_path.exists():
-        print(f"❌ Input folder '{input_folder_path}' not found!")
-        print(f"Please check the path and make sure the folder exists.")
+    # Validate configuration
+    if not validate_environment():
         return
     
-    # Create output folder if it doesn't exist
-    output_folder_path.mkdir(parents=True, exist_ok=True)
-    print(f"✅ Output folder created/verified: {output_folder_path}")
-    
-    # Find all PDF files in the input folder
-    pdf_files = list(input_folder_path.glob("*.pdf"))
-    
-    if not pdf_files:
-        print(f"❌ No PDF files found in '{input_folder_path}'!")
-        print(f"Please make sure there are PDF files in the folder.")
+    if not validate_paths(input_folder, output_folder):
         return
     
-    print(f"📁 Found {len(pdf_files)} PDF files in '{input_folder_path}'")
-    
-    # Check Azure credentials
-    if not endpoint or not key:
-        print("❌ Azure credentials not found!")
-        print("Please check your DOCUMENTINTELLIGENCE_ENDPOINT and DOCUMENTINTELLIGENCE_API_KEY environment variables")
-        return
-    
-    # Initialize Document Intelligence client
+    # Initialize processors
     try:
-        document_intelligence_client = DocumentIntelligenceClient(
-            endpoint=endpoint, credential=AzureKeyCredential(key)
-        )
-        print("✅ Azure Document Intelligence client initialized successfully")
+        endpoint = os.getenv("DOCUMENTINTELLIGENCE_ENDPOINT")
+        key = os.getenv("DOCUMENTINTELLIGENCE_API_KEY")
+        
+        invoice_processor = InvoiceProcessor(endpoint, key)
+        batch_processor = InvoiceBatchProcessor(invoice_processor, output_folder)
+        
+        print("Azure Document Intelligence client initialized successfully")
+        
     except Exception as e:
-        print(f"❌ Failed to initialize Azure client: {e}")
+        print(f"Failed to initialize Azure client: {e}")
         return
     
-    # Process each PDF file
-    successful_processing = 0
-    failed_processing = 0
-    processed_files = []
+    # Process batch
+    start_time = time.time()
+    results = batch_processor.process_batch(input_folder)
+    total_time = time.time() - start_time
     
-    for pdf_file in pdf_files:
-        try:
-            # Create JSON filename based on PDF filename
-            json_filename = f"{pdf_file.stem}.json"
-            json_file_path = output_folder_path / json_filename
-            
-            # Check if JSON already exists in output folder
-            if json_file_path.exists():
-                print(f"   ⚠️ JSON file already exists, skipping: {json_filename}")
-                continue
-            
-            # Process the invoice
-            result, error = process_single_invoice(pdf_file, document_intelligence_client)
-            
-            if result:
-                # Save the result as individual JSON file in preap_output folder
-                saved_path = save_preap_to_file(result, json_file_path)
-                
-                if saved_path:
-                    print(f"✅ Successfully processed: {pdf_file.name}")
-                    
-                    # Print brief summary
-                    if result["extracted_data"]["documents"]:
-                        doc = result["extracted_data"]["documents"][0]
-                        vendor = doc["fields"].get("VendorName", {}).get("value", "N/A")
-                        total = doc["fields"].get("InvoiceTotal", {}).get("value", "N/A")
-                        currency = doc["fields"].get("InvoiceTotal", {}).get("currency", "")
-                        invoice_id = doc["fields"].get("InvoiceId", {}).get("value", "N/A")
-                        print(f"   🏢 Vendor: {vendor}")
-                        print(f"   🆔 Invoice ID: {invoice_id}")
-                        print(f"   💰 Total: {total} {currency}")
-                    
-                    successful_processing += 1
-                    processed_files.append({
-                        "pdf": pdf_file.name,
-                        "json": json_filename,
-                        "vendor": doc["fields"].get("VendorName", {}).get("value", "N/A") if result["extracted_data"]["documents"] else "N/A"
-                    })
-                else:
-                    print(f"❌ Failed to save JSON for: {pdf_file.name}")
-                    failed_processing += 1
-            else:
-                print(f"❌ Failed to process {pdf_file.name}: {error}")
-                failed_processing += 1
-                
-        except Exception as e:
-            print(f"❌ Unexpected error processing {pdf_file.name}: {str(e)}")
-            failed_processing += 1
-        
-        print("-" * 50)  # Separator line between files
-    
-    # Print summary
-    print("\n" + "=" * 60)
-    print("📋 FINAL PROCESSING SUMMARY:")
-    print(f"   ✅ Successful: {successful_processing}")
-    print(f"   ❌ Failed: {failed_processing}")
-    print(f"   📁 Total PDFs: {len(pdf_files)}")
-    print(f"   💾 JSON files created: {successful_processing}")
-    print(f"   📍 Input Location: {input_folder_path}")
-    print(f"   📍 Output Location: {output_folder_path}")
-    
-    if successful_processing > 0:
-        print(f"\n🎉 Successfully created {successful_processing} JSON files!")
-        print("📂 Check the output folder for your JSON files:")
-        print(f"   {output_folder_path}")
-        
-        # Create a summary file
-        summary_file = output_folder_path / "processing_summary.json"
-        summary_data = {
-            "processing_date": datetime.now(UTC).isoformat(),
-            "total_pdfs": len(pdf_files),
-            "successful_processing": successful_processing,
-            "failed_processing": failed_processing,
-            "processed_files": processed_files
-        }
-        
-        with open(summary_file, 'w', encoding='utf-8') as f:
-            json.dump(summary_data, f, indent=2, ensure_ascii=False, default=str)
-        
-        print(f"\n📊 Processing summary saved: {summary_file}")
-    else:
-        print(f"\n😞 No JSON files were created. Please check the errors above.")
-    
-    print("=" * 60)
+    # Print final summary
+    print (f"Total PDFs: {results['total_files']} processed")
+
 
 if __name__ == "__main__":
     main()
