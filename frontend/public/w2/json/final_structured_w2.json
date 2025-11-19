@@ -1,0 +1,31 @@
+{
+  "status": "Completed",
+  "doc_type": "W2",
+  "doc_type_confidence_score": 0.999928594,
+  "doc_type_review_needed": false,
+  "review_needed_data": {
+    "confidence_top": 0.988739312
+  },
+  "human_review_needed": {
+    "is_human_review_needed_pre_matching": true,
+    "is_human_review_needed": true
+  },
+  "extraction_json": {
+    "doc_type": "W2",
+    "Employer Name": "STATE OF CALIFORNIA"
+  },
+  "w2": [
+    {
+      "year": "2023",
+      "wages": "88,761.59"
+    },
+    {
+      "year": "2024",
+      "wages": "28"
+    },
+    {
+      "year": "2024",
+      "wages": "19"
+    }
+  ]
+}

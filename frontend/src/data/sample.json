@@ -1,0 +1,125 @@
+{
+  "status": "Completed",
+  "doc_type": "Bank Statement",
+  "doc_type_confidence_score": 0.999928594,
+  "doc_type_review_needed": false,
+  "review_needed_data": {
+    "confidence_top": 0.988739312
+  },
+  "human_review_needed": {
+    "is_human_review_needed_pre_matching": true,
+    "is_human_review_needed": true
+  },
+  "extraction_json": {
+    "doc_type": "Bank Statement",
+    "Name of Institution": "The Bernstein Companies 401(k) Savings and Profit Sharing Plan",
+    "Account Holder": "RONNIEFORD",
+    "Account Number": "",
+    "beginning date": "10/01/2024",
+    "ending date": "10/31/2024",
+    "transactions": [
+      {
+        "Credit_Debit": "Debit",
+        "Amount": "45,977.27",
+        "Account": "Retirement Savings",
+        "Description": "Retirement Savings Statement"
+      }
+    ]
+  },
+  "extraction_json_with_coordinates": {
+    "doc_type": {
+      "value": "Bank Statement",
+      "coordinates": null,
+      "page_num": null
+    },
+    "Name of Institution": {
+      "value": "Police and Fire",
+      "coordinates": {
+        "x0": 0.3098039215686274,
+        "y0": 0.0673123611111113,
+        "x1": 0.9318951665688889,
+        "y1": 0.7948892242424244
+      },
+      "page_num": 1
+    },
+    "Account Holder": {
+      "value": "BOWWEN F DIAMOND",
+      "coordinates": {
+        "x0": 0.2698039215686274,
+        "y0": 0.1273123611111113,
+        "x1": 0.9318951665688889,
+        "y1": 0.7948892242424244
+      },
+      "page_num": 1
+    },
+    "Account Number": {
+      "value": "0060826051",
+      "coordinates": {
+        "x0": 0.6098039215686274,
+        "y0": 0.1873123611111113,
+        "x1": 0.9318951665688889,
+        "y1": 0.7948892242424244
+      },
+      "page_num": 1
+    },
+    "beginning date": {
+      "value": "08/01/24",
+      "coordinates": {
+        "x0": 0.8098039215686274,
+        "y0": 0.1873123611111113,
+        "x1": 0.30711979077443796,
+        "y1": 0.17958357323232318
+      },
+      "page_num": 1
+    },
+    "ending date": {
+      "value": "08/31/24",
+      "coordinates": {
+        "x0": 0.8098039215686274,
+        "y0": 0.1873123611111113,
+        "x1": 0.7700845280530065,
+        "y1": 0.6001922545454547
+      },
+      "page_num": 1
+    },
+    "transactions": [
+      {
+        "Credit_Debit": {
+          "value": "Debit",
+          "coordinates": null,
+          "page_num": 1
+        },
+        "Amount": {
+          "value": "529.29",
+          "coordinates": {
+            "x0": 0.8098039215686274,
+            "y0": 0.3073123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        },
+        "Account": {
+          "value": "S0004 Checking",
+          "coordinates": {
+            "x0": 0.6098039215686274,
+            "y0": 0.1073123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        },
+        "Description": {
+          "value": "Withdrawal Trasfer To Loan 0011",
+          "coordinates": {
+            "x0": 0.6098039215686274,
+            "y0": 0.1073123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        }
+      }
+    ]
+  }
+}

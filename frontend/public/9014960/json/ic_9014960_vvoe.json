@@ -1,0 +1,1481 @@
+{
+  "Summary": [
+    {
+      "SkillName": "VOE",
+      "Labels": [
+        {
+          "LabelName": "Employee Name",
+          "LabelOrder": 0,
+          "Values": [
+            {
+              "Value": "RUPERTO CONTRERAS TENORIO",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/1/a4b7692a9ff948fa81cef3da78815cfd",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Social Security Number",
+          "LabelOrder": 1,
+          "Values": [
+            {
+              "Value": "8780",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address 1",
+          "LabelOrder": 2,
+          "Values": [
+            {
+              "Value": "348 E AVENUE J14",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address 2",
+          "LabelOrder": 3,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address City",
+          "LabelOrder": 4,
+          "Values": [
+            {
+              "Value": "LANCASTER",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address State",
+          "LabelOrder": 5,
+          "Values": [
+            {
+              "Value": "CA",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address Zip Code",
+          "LabelOrder": 6,
+          "Values": [
+            {
+              "Value": "93535",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer/Company Name",
+          "LabelOrder": 7,
+          "Values": [
+            {
+              "Value": "Panda Restaurant Group, Inc",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address 1",
+          "LabelOrder": 8,
+          "Values": [
+            {
+              "Value": "840 W AVE L",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address 2",
+          "LabelOrder": 9,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address City",
+          "LabelOrder": 10,
+          "Values": [
+            {
+              "Value": "LANCASTER",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address State",
+          "LabelOrder": 11,
+          "Values": [
+            {
+              "Value": "CA",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address Zip Code",
+          "LabelOrder": 12,
+          "Values": [
+            {
+              "Value": "93534",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Current As Of",
+          "LabelOrder": 13,
+          "Values": [
+            {
+              "Value": "09/13/2024",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Verified On or WVOE Thru Date",
+          "LabelOrder": 14,
+          "Values": [
+            {
+              "Value": "01/03/2025",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employment Status",
+          "LabelOrder": 15,
+          "Values": [
+            {
+              "Value": "Active",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Most Recent Start Date",
+          "LabelOrder": 16,
+          "Values": [
+            {
+              "Value": "21/01/2022",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Original Hire Date",
+          "LabelOrder": 17,
+          "Values": [
+            {
+              "Value": "21/01/2022",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Present Position",
+          "LabelOrder": 18,
+          "Values": [
+            {
+              "Value": "SHIFT LEADER/PX",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/2ac0396a96424ca893dddb005a698e39",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Rate Of Pay Amount",
+          "LabelOrder": 19,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Type Name",
+          "LabelOrder": 20,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Rate Of Pay Frequency",
+          "LabelOrder": 21,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Average Hours Per Pay Period",
+          "LabelOrder": 22,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Gross Base Pay",
+          "LabelOrder": 23,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Amount Of Last Pay Increase",
+          "LabelOrder": 24,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Amount of Next Pay Increase",
+          "LabelOrder": 25,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Date Of Applicants Last Increase",
+          "LabelOrder": 26,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Date of Applicants Next Increase",
+          "LabelOrder": 27,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Year 1",
+          "LabelOrder": 28,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Base Salary 1",
+          "LabelOrder": 29,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Overtime 1",
+          "LabelOrder": 30,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Commission 1",
+          "LabelOrder": 31,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Bonus 1",
+          "LabelOrder": 32,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Other Income 1",
+          "LabelOrder": 33,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Total Pay 1",
+          "LabelOrder": 34,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Year 2",
+          "LabelOrder": 35,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Base Salary 2",
+          "LabelOrder": 36,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Overtime 2",
+          "LabelOrder": 37,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Commission 2",
+          "LabelOrder": 38,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Bonus 2",
+          "LabelOrder": 39,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Other Income 2",
+          "LabelOrder": 40,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Total Pay 2",
+          "LabelOrder": 41,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Year 3",
+          "LabelOrder": 42,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Base Pay 3",
+          "LabelOrder": 43,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Overtime 3",
+          "LabelOrder": 44,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Commission 3",
+          "LabelOrder": 45,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Bonuses 3",
+          "LabelOrder": 46,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Other Income 3",
+          "LabelOrder": 47,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Total Pay 3",
+          "LabelOrder": 48,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Remarks (If Employee Was Off Work For Any Length Of Time)",
+          "LabelOrder": 49,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Date Hired (Previous Employment)",
+          "LabelOrder": 50,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Date Terminated (Previous Employment)",
+          "LabelOrder": 51,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "\"Salary/Wage At Termination Per (Time Period)",
+          "LabelOrder": 52,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ],
+          "ChildLabels": [
+            {
+              "LabelName": "0\"",
+              "LabelOrder": 53,
+              "Values": [
+                {
+                  "Value": "N/A",
+                  "ConfidenceScore": 100.0,
+                  "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+                  "DocTitle": "ic_9014960_vvoe.pdf",
+                  "PageNumber": "3",
+                  "Status": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "LabelName": "\"(Previous Employment)\"\"\"",
+          "LabelOrder": 54,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Salary/Wage At Termination - Base (Previous Employment)",
+          "LabelOrder": 55,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Salary/Wage At Termination - Overtime (Previous Employment)",
+          "LabelOrder": 56,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "\"Salary/Wage At Termination - Commissions",
+          "LabelOrder": 57,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ],
+          "ChildLabels": [
+            {
+              "LabelName": "0\"",
+              "LabelOrder": 58,
+              "Values": [
+                {
+                  "Value": "N/A",
+                  "ConfidenceScore": 100.0,
+                  "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+                  "DocTitle": "ic_9014960_vvoe.pdf",
+                  "PageNumber": "3",
+                  "Status": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "LabelName": "\"Salary/Wage At Termination - Bonus",
+          "LabelOrder": 59,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ],
+          "ChildLabels": [
+            {
+              "LabelName": "0\"",
+              "LabelOrder": 60,
+              "Values": [
+                {
+                  "Value": "N/A",
+                  "ConfidenceScore": 100.0,
+                  "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+                  "DocTitle": "ic_9014960_vvoe.pdf",
+                  "PageNumber": "3",
+                  "Status": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "LabelName": "\"Reason For Leaving",
+          "LabelOrder": 61,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ],
+          "ChildLabels": [
+            {
+              "LabelName": "0\"",
+              "LabelOrder": 62,
+              "Values": [
+                {
+                  "Value": "N/A",
+                  "ConfidenceScore": 100.0,
+                  "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+                  "DocTitle": "ic_9014960_vvoe.pdf",
+                  "PageNumber": "3",
+                  "Status": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "LabelName": "\"Position Held",
+          "LabelOrder": 63,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ],
+          "ChildLabels": [
+            {
+              "LabelName": "0\"",
+              "LabelOrder": 64,
+              "Values": [
+                {
+                  "Value": "N/A",
+                  "ConfidenceScore": 100.0,
+                  "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+                  "DocTitle": "ic_9014960_vvoe.pdf",
+                  "PageNumber": "3",
+                  "Status": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "LabelName": "Signature Of Employer",
+          "LabelOrder": 65,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Signature Date",
+          "LabelOrder": 66,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "From (Name Of Lender)",
+          "LabelOrder": 67,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "From (Address Of Lender)",
+          "LabelOrder": 68,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Signature Of Lender",
+          "LabelOrder": 69,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Title",
+          "LabelOrder": 70,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Date",
+          "LabelOrder": 71,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Lender's Number (Optional)",
+          "LabelOrder": 72,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Badge Number",
+          "LabelOrder": 73,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Signature Of Applicant",
+          "LabelOrder": 74,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Probability Of Continued Employment",
+          "LabelOrder": 75,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Base Salary 3",
+          "LabelOrder": 76,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Bonus 3",
+          "LabelOrder": 77,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "For Military Personnel Only  Pay Grade",
+          "LabelOrder": 78,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "For Military Personnel Only (Type)  Base Pay",
+          "LabelOrder": 79,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "For Military Personnel Only (Type)  Rations",
+          "LabelOrder": 80,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "For Military Personnel Only (Type) Flight Or Hazard",
+          "LabelOrder": 81,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "For Military Personnel Only (Type)  Clothing",
+          "LabelOrder": 82,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "For Military Personnel Only (Type)  Quarters",
+          "LabelOrder": 83,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "For Military Personnel Only (Type) Pro Pay",
+          "LabelOrder": 84,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "For Military Personnel Only (Type)  Overseas Or Combat",
+          "LabelOrder": 85,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "For Military Personnel Only (Type)  Variable Housing Allowance",
+          "LabelOrder": 86,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "If Overtime Or Bonus Is Applicable  Is Its Continuance Likely?   Overtime",
+          "LabelOrder": 87,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "If Overtime Or Bonus Is Applicable  Is Its Continuance Likely?  Bonus",
+          "LabelOrder": 88,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "If Paid Hourly  Average Hours Per Week",
+          "LabelOrder": 89,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Title (Please Print Or Type)",
+          "LabelOrder": 90,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Print Or Type Name Signed In Item 26",
+          "LabelOrder": 91,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Phone No.",
+          "LabelOrder": 92,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Reference Number",
+          "LabelOrder": 93,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Date Last Updated",
+          "LabelOrder": 94,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Verification Type",
+          "LabelOrder": 95,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Permissible Purpose",
+          "LabelOrder": 96,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Disclaimer",
+          "LabelOrder": 97,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Division Number",
+          "LabelOrder": 98,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employment End Date",
+          "LabelOrder": 99,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Total Time With Employer",
+          "LabelOrder": 100,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "On Next Leave Dates",
+          "LabelOrder": 101,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "On Last Leave Dates",
+          "LabelOrder": 102,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Tracking Number",
+          "LabelOrder": 103,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/VOE /08422dac0c0c3353392533dde8762c44/3/6edf7383584f41fa831a622fa33604df",
+              "DocTitle": "ic_9014960_vvoe.pdf",
+              "PageNumber": "3",
+              "Status": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Title": "ic_9014960_vvoe.pdf",
+  "Url": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/a/webapi/api/browser/getPdfContent?file=de1cc96f78c31857dc9d2af1351bf22b-6fcc68c772860b9f94101f1b16206628",
+  "StageName": "",
+  "GeneratedOn": "2025-04-14T19:33:40.4304549Z",
+  "ProcessingTime": "00:01:13.8329990",
+  "ScreenshotUrl": []
+}

@@ -1,0 +1,905 @@
+{
+  "Summary": [
+    {
+      "SkillName": "paystub 2",
+      "Labels": [
+        {
+          "LabelName": "Employer Name",
+          "LabelOrder": 0,
+          "Values": [
+            {
+              "Value": "Panda Express, Inc",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address 1",
+          "LabelOrder": 1,
+          "Values": [
+            {
+              "Value": "1683 Walnut Grove Avenue",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address 2",
+          "LabelOrder": 2,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address City",
+          "LabelOrder": 3,
+          "Values": [
+            {
+              "Value": "Rosemead",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address State",
+          "LabelOrder": 4,
+          "Values": [
+            {
+              "Value": "CA",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address Zip Code",
+          "LabelOrder": 5,
+          "Values": [
+            {
+              "Value": "91770",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Name",
+          "LabelOrder": 6,
+          "Values": [
+            {
+              "Value": "Jetzuvely Cruz",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Marital Status",
+          "LabelOrder": 7,
+          "Values": [
+            {
+              "Value": "Single or Married filing separately",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Type of ID",
+          "LabelOrder": 8,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address 1",
+          "LabelOrder": 9,
+          "Values": [
+            {
+              "Value": "348 E Avenue",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address 2",
+          "LabelOrder": 10,
+          "Values": [
+            {
+              "Value": "J14",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address City",
+          "LabelOrder": 11,
+          "Values": [
+            {
+              "Value": "Lancaster",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address State",
+          "LabelOrder": 12,
+          "Values": [
+            {
+              "Value": "CA",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address Zip Code",
+          "LabelOrder": 13,
+          "Values": [
+            {
+              "Value": "93535",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Paystub Provider",
+          "LabelOrder": 14,
+          "Values": [
+            {
+              "Value": "Panda",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Date of Hire",
+          "LabelOrder": 15,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Period Start Date",
+          "LabelOrder": 16,
+          "Values": [
+            {
+              "Value": "12/01/2024",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Period End Date",
+          "LabelOrder": 17,
+          "Values": [
+            {
+              "Value": "12/14/2024",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Date",
+          "LabelOrder": 18,
+          "Values": [
+            {
+              "Value": "2024-12-20",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Actual Pay Frequency",
+          "LabelOrder": 19,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Earning Description",
+          "LabelOrder": 20,
+          "Values": [
+            {
+              "Value": "USA - RO History",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "Meal Break",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "Premium",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "Panda Sick Pay",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "CA SICK PAY",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "REGULAR PAY",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Hourly Rate ",
+          "LabelOrder": 21,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "23",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "23",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Current Hours or Hours",
+          "LabelOrder": 22,
+          "Values": [
+            {
+              "Value": "16",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "27.63",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "16.85",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "8",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "0",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "0",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "0",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Earnings for Current Period",
+          "LabelOrder": 23,
+          "Values": [
+            {
+              "Value": "184.00",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "184.00",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "635.49",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "387.56",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "0.00",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "0.00",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "0.00",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Total Earnings for Current Period",
+          "LabelOrder": 24,
+          "Values": [
+            {
+              "Value": "1,230.04",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Year to Date Hours",
+          "LabelOrder": 25,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Year to Date Earnings",
+          "LabelOrder": 26,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Total Year to Date Earnings",
+          "LabelOrder": 27,
+          "Values": [
+            {
+              "Value": "30,307.40",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Annual salary ",
+          "LabelOrder": 28,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Basis",
+          "LabelOrder": 29,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Net pay amount",
+          "LabelOrder": 30,
+          "Values": [
+            {
+              "Value": "1,044.62",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Deduction Description",
+          "LabelOrder": 31,
+          "Values": [
+            {
+              "Value": "ASdi",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "State Tax - CA",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "USA - Misc. Deduction - History",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "Medicare",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "Federal Withholding",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "CA VPDI",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Deduction Type",
+          "LabelOrder": 32,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Deduction Amount",
+          "LabelOrder": 33,
+          "Values": [
+            {
+              "Value": "75.42",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "16.14",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "67.47",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "19.16",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "13.53",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            },
+            {
+              "Value": "0.00",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Total Deductions",
+          "LabelOrder": 34,
+          "Values": [
+            {
+              "Value": "181.69",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Year to Date Deductions",
+          "LabelOrder": 35,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Total Year to Date Deductions",
+          "LabelOrder": 36,
+          "Values": [
+            {
+              "Value": "4,307.68",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Distribution Description",
+          "LabelOrder": 37,
+          "Values": [
+            {
+              "Value": "Checking",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Distribution Bank Name",
+          "LabelOrder": 38,
+          "Values": [
+            {
+              "Value": "Bank of America",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Distribution Account Number",
+          "LabelOrder": 39,
+          "Values": [
+            {
+              "Value": "1990",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Distribution Bank Account Type",
+          "LabelOrder": 40,
+          "Values": [
+            {
+              "Value": "Checking",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Distribution Current Pay",
+          "LabelOrder": 41,
+          "Values": [
+            {
+              "Value": "1,044.62",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Pay Distribution YTD Pay",
+          "LabelOrder": 42,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/Paystub/06d34588dfe434866fc72d8e6b36890d/1/a852d60fa4c748c1aea4bd6874aec50e",
+              "DocTitle": "ic_9014960_paystub.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Title": "ic_9014960_paystub.pdf",
+  "Url": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/a/webapi/api/browser/getPdfContent?file=8d30aa27cf32bfdb19e53c2c3eea98d1-800201ba8dbaf925cfe83b61c4dbf904",
+  "StageName": "Version 2",
+  "GeneratedOn": "2025-04-14T18:40:26.508132Z",
+  "ProcessingTime": "00:01:36.5659412",
+  "ScreenshotUrl": []
+}

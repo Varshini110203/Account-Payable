@@ -1,0 +1,743 @@
+{
+  "Summary": [
+    {
+      "SkillName": "W2",
+      "Labels": [
+        {
+          "LabelName": "Year",
+          "LabelOrder": 0,
+          "Values": [
+            {
+              "Value": "2023",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Social Security Number",
+          "LabelOrder": 1,
+          "Values": [
+            {
+              "Value": "7944",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer ID No. (EIN",
+          "LabelOrder": 2,
+          "Values": [
+            {
+              "Value": "52-0785907",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Wages Tips Other Comp",
+          "LabelOrder": 3,
+          "Values": [
+            {
+              "Value": "48423.13",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Federal Income Tax Withheld",
+          "LabelOrder": 4,
+          "Values": [
+            {
+              "Value": "1989.10",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Social Security Wages",
+          "LabelOrder": 5,
+          "Values": [
+            {
+              "Value": "54778.69",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Social Security Tax Withheld",
+          "LabelOrder": 6,
+          "Values": [
+            {
+              "Value": "3396.30",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Medicare Wages And Tips",
+          "LabelOrder": 7,
+          "Values": [
+            {
+              "Value": "54778.69",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Medicare Tax Withheld",
+          "LabelOrder": 8,
+          "Values": [
+            {
+              "Value": "794.30",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Name",
+          "LabelOrder": 9,
+          "Values": [
+            {
+              "Value": "Bernstein Companies",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address 1",
+          "LabelOrder": 10,
+          "Values": [
+            {
+              "Value": "3299 K NW St",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address 2",
+          "LabelOrder": 11,
+          "Values": [
+            {
+              "Value": "Ste 700",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address City",
+          "LabelOrder": 12,
+          "Values": [
+            {
+              "Value": "Washington",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address State",
+          "LabelOrder": 13,
+          "Values": [
+            {
+              "Value": "DC",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer Address Zip Code",
+          "LabelOrder": 14,
+          "Values": [
+            {
+              "Value": "20007",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Name",
+          "LabelOrder": 15,
+          "Values": [
+            {
+              "Value": "Ronnie Ford",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address 1",
+          "LabelOrder": 16,
+          "Values": [
+            {
+              "Value": "13102 Foxhall Drive",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address 2",
+          "LabelOrder": 17,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address City",
+          "LabelOrder": 18,
+          "Values": [
+            {
+              "Value": "Silver Spring",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address State",
+          "LabelOrder": 19,
+          "Values": [
+            {
+              "Value": "MD",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employee Address Zip Code",
+          "LabelOrder": 20,
+          "Values": [
+            {
+              "Value": "20906",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Social Security Tips",
+          "LabelOrder": 21,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Allocated Tips",
+          "LabelOrder": 22,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Dependent Care Benefits",
+          "LabelOrder": 23,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Nonqualified Plans",
+          "LabelOrder": 24,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Code Description 1",
+          "LabelOrder": 25,
+          "Values": [
+            {
+              "Value": "C",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Code Amount 1",
+          "LabelOrder": 26,
+          "Values": [
+            {
+              "Value": "30.41",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Code Description 2",
+          "LabelOrder": 27,
+          "Values": [
+            {
+              "Value": "D",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Code Amount 2",
+          "LabelOrder": 28,
+          "Values": [
+            {
+              "Value": "6355.56",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Code Description 3",
+          "LabelOrder": 29,
+          "Values": [
+            {
+              "Value": "DD",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Code Amount 3",
+          "LabelOrder": 30,
+          "Values": [
+            {
+              "Value": "14851.16",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Code Description 4",
+          "LabelOrder": 31,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Code Amount 4",
+          "LabelOrder": 32,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Statutory Employee",
+          "LabelOrder": 33,
+          "Values": [
+            {
+              "Value": "Unchecked",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Retirement Plan",
+          "LabelOrder": 34,
+          "Values": [
+            {
+              "Value": "Checked",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Third-Party Sick Pay",
+          "LabelOrder": 35,
+          "Values": [
+            {
+              "Value": "Unchecked",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "State Primary",
+          "LabelOrder": 39,
+          "Values": [
+            {
+              "Value": "MD",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "State Secondary",
+          "LabelOrder": 40,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer state ID Number Primary",
+          "LabelOrder": 41,
+          "Values": [
+            {
+              "Value": "01648450",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Employer state ID Number Secondary",
+          "LabelOrder": 42,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "State Wages Tips Primary",
+          "LabelOrder": 43,
+          "Values": [
+            {
+              "Value": "48423.13",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "State Wages Tips Secondary",
+          "LabelOrder": 44,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "State Income Tax Primary",
+          "LabelOrder": 45,
+          "Values": [
+            {
+              "Value": "3402.91",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "State Income Tax Secondary",
+          "LabelOrder": 46,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Local Wages Tips Primary",
+          "LabelOrder": 47,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Local Wages Tips Secondary",
+          "LabelOrder": 48,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Local Income Tax Primary",
+          "LabelOrder": 49,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Local Income Tax Secondary",
+          "LabelOrder": 50,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Locality Name Primary",
+          "LabelOrder": 51,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Locality Name Secondary",
+          "LabelOrder": 52,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Other Description",
+          "LabelOrder": 53,
+          "Values": [
+            {
+              "Value": "Other",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        },
+        {
+          "LabelName": "Other Amount",
+          "LabelOrder": 54,
+          "Values": [
+            {
+              "Value": "N/A",
+              "ConfidenceScore": 100.0,
+              "Link": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/CAProjectAPI/W2 Extraction/23de82c0a0d39eaf6797a5c1d9eb5e87/1/5520781e58734d0eb2d77d787f0db5a3",
+              "DocTitle": "manualic_3188332_w2.pdf",
+              "PageNumber": "1",
+              "Status": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Title": "manualic_3188332_w2.pdf",
+  "Url": "https://ca-stagging-botminds.westus3.cloudapp.azure.com/a/webapi/api/browser/getPdfContent?file=14b0448800a40e2299de61d32ac72f5a-402f040d1a9b63ecd2807709e686e06b",
+  "StageName": "Version 2 ",
+  "GeneratedOn": "2025-04-14T18:50:20.6492818Z",
+  "ProcessingTime": "00:00:49.1048851",
+  "ScreenshotUrl": []
+}

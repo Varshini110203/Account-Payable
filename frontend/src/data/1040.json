@@ -1,0 +1,81 @@
+{
+    "status": "Completed",
+    "doc_type": "1040",
+    "doc_type_confidence_score": 0.999928594,
+    "doc_type_review_needed": false,
+    "review_needed_data": {
+      "confidence_top": 0.988739312
+    },
+    "human_review_needed": {
+      "is_human_review_needed_pre_matching": true,
+      "is_human_review_needed": true
+    },
+    "extraction_json": {
+      "doc_type": "1040",
+      "First Name": "Kevin D",
+    "Last Name": "Champaingne",
+      "SSN": "002666156",
+      "year": "2023",
+      "Schedule C Profit or Loss": "2,499",
+      "beginning date": "2023-01-01",
+      "ending date": "2023-12-31"
+    },
+    "extraction_json_with_coordinates": {
+      "doc_type": {
+        "value": "Bank Statement",
+        "coordinates": null,
+        "page_num": null
+      },
+      "First Name": {
+        "value": "Kevin D",
+        "coordinates": {
+          "x0": 0.3098039215686274,
+          "y0": 0.1073123611111113,
+          "x1": 0.9318951665688889,
+          "y1": 0.7948892242424244
+        },
+        "page_num": 1
+      },
+      "Last Name": {
+        "value": "Champaingne",
+        "coordinates": {
+         "x0": 0.5098039215686274,
+          "y0": 0.1073123611111113,
+          "x1": 0.9318951665688889,
+          "y1": 0.7948892242424244
+        },
+        "page_num": 1
+      },
+      "SSN": {
+        "value": "002666156",
+        "coordinates": {
+            "x0": 0.8098039215686274,
+            "y0": 0.1073123611111113,
+          "x1": 0.9318951665688889,
+          "y1": 0.7948892242424244
+        },
+        "page_num": 1
+      },
+      "year": {
+        "value": "2023",
+        "coordinates": {
+            "x0": 0.5098039215686274,
+            "y0": 0.0673123611111113,
+          "x1": 0.30711979077443796,
+          "y1": 0.17958357323232318
+        },
+        "page_num": 1
+      },
+      "Schedule C Profit or Loss": {
+        "value": "2,499",
+        "coordinates": {
+            "x0": 0.9098039215686274,
+            "y0": 0.7273123611111113,
+          "x1": 0.30711979077443796,
+          "y1": 0.17958357323232318
+        },
+        "page_num": 7
+      }
+    }
+  }
+  

@@ -1,0 +1,252 @@
+{
+  "status": "Completed",
+  "doc_type": "WVOE",
+  "doc_type_confidence_score": 0.999928594,
+  "doc_type_review_needed": false,
+  "review_needed_data": {
+    "confidence_top": 0.988739312
+  },
+  "human_review_needed": {
+    "is_human_review_needed_pre_matching": true,
+    "is_human_review_needed": true
+  },
+  "extraction_json": {
+    "doc_type": "WVOE",
+    "Rate Of Pay": "1,601.30",
+    "Pay Frequency": "Bi-weekly",
+    "Hours": "48",
+    "years": [
+      {
+        "Year": {
+          "value": "2024"
+        },
+        "Base Salary": {
+          "value": "35,228.60"
+        },
+        "Overtime": {
+          "value": "Date not provided"
+        },
+        "Commissions": {
+          "value": "Date not provided"
+        },
+        "Bonus": {
+          "value": "11,564.80"
+        },
+        "Others": {
+          "value": "Date not provided"
+        },
+        "Total": {
+          "value": "46,793.40"
+        }
+      },
+      {
+        "Year": {
+          "value": "2023"
+        },
+        "Base Salary": {
+          "value": "55,511.81",
+          "coordinates": null,
+          "page_num": 1
+        },
+        "Overtime": {
+          "value": "Date not provided"
+        },
+        "Commissions": {
+          "value": "Date not provided"
+        },
+        "Bonus": {
+          "value": "3,500.00"
+        },
+        "Others": {
+          "value": "Date not provided"
+        },
+        "Total": {
+          "value": "59,011.81"
+        }
+      }
+    ]
+  },
+  "extraction_json_with_coordinates": {
+    "doc_type": {
+      "value": "WVOE",
+      "coordinates": null,
+      "page_num": null
+    },
+    "Rate Of Pay": {
+      "value": "1,601.30",
+      "coordinates": {
+        "x0": 0.3898039215686274,
+        "y0": 0.6973123611111113,
+        "x1": 0.9318951665688889,
+        "y1": 0.7948892242424244
+      },
+      "page_num": 1
+    },
+    "Pay Frequency": {
+      "value": "Bi-weekly",
+      "coordinates": {
+        "x0": 0.4098039215686274,
+        "y0": 0.7173123611111113,
+        "x1": 0.9318951665688889,
+        "y1": 0.7948892242424244
+      },
+      "page_num": 1
+    },
+    "Hours": {
+      "value": "48",
+      "coordinates": {
+        "x0": 0.3598039215686274,
+        "y0": 0.7273123611111113,
+        "x1": 0.9318951665688889,
+        "y1": 0.7948892242424244
+      },
+      "page_num": 1
+    },
+    "years": [
+      {
+        "Year": {
+          "value": "2024",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8573123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        },
+        "Base Salary": {
+          "value": "35,228.60",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8573123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        },
+        "Overtime": {
+          "value": "Date not provided",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8573123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        },
+        "Commissions": {
+          "value": "Date not provided",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8573123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        },
+        "Bonus": {
+          "value": "11,564.80",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8573123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        },
+        "Others": {
+          "value": "Date not provided",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8573123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        },
+        "Total": {
+          "value": "46,793.40",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8573123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.8515269010101009
+          },
+          "page_num": 1
+        }
+      },
+      {
+        "Year": {
+          "value": "2023",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8973123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.9515269010101009
+          },
+          "page_num": 1
+        },
+        "Base Salary": {
+          "value": "55,511.81",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8973123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.9515269010101009
+          },
+          "page_num": 1
+        },
+        "Overtime": {
+          "value": "Date not provided",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8973123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.9515269010101009
+          },
+          "page_num": 1
+        },
+        "Commissions": {
+          "value": "Date not provided",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8973123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.9515269010101009
+          },
+          "page_num": 1
+        },
+        "Bonus": {
+          "value": "3,500.00",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8973123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.9515269010101009
+          },
+          "page_num": 1
+        },
+        "Others": {
+          "value": "Date not provided",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8973123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.9515269010101009
+          },
+          "page_num": 1
+        },
+        "Total": {
+          "value": "59,011.81",
+          "coordinates": {
+            "x0": 0.9258039215686274,
+            "y0": 0.8973123611111113,
+            "x1": 0.49299592811939874,
+            "y1": 0.9515269010101009
+          },
+          "page_num": 1
+        }
+      }
+    ]
+  }
+}
