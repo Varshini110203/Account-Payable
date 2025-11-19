@@ -206,7 +206,7 @@ def main():
     
     # Configuration
     input_folder = Path("Finance_AP\AP Invoice Samples")
-    output_folder = Path("backend\preap_output")
+    output_folder = Path("preap_output")
     
     # Validate configuration
     if not validate_environment():

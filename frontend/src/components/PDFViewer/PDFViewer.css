@@ -25,3 +25,82 @@
     background-color: #6c757d;
     cursor: not-allowed;
   }
+  /* PDFViewer.css */
+.pdf-highlight {
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-highlight:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+.item-highlight {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.react-pdf__Page {
+  position: relative;
+}
+
+.react-pdf__Page__textContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.react-pdf__Page__textContent span {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}
+
+.react-pdf__Page__annotations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Ensure highlights are above text layer but below annotations */
+.react-pdf__Page__textContent {
+  z-index: 1;
+}
+
+.pdf-highlight {
+  z-index: 2;
+}
+
+.react-pdf__Page__annotations {
+  z-index: 3;
+}
+
+/* Loading states */
+.pdf-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background-color: #f8f8f8;
+  border: 1px dashed #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Error states */
+.pdf-error {
+  padding: 20px;
+  text-align: center;
+  color: #d72d30;
+  background-color: #fff1f1;
+  border: 1px solid #ffd7d9;
+  border-radius: 4px;
+  margin: 10px;
+}

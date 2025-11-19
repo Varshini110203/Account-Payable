@@ -22,32 +22,8 @@ const MainLayout = () => {
   const [hoveredKey, setHoveredKey] = useState({ key: null, pageNum: null });
   const [pageRenderReady, setPageRenderReady] = useState(false);
 
-  const extractionData = jsonData?.extraction_json || {};
-
   const toggleRightPanel = () => {
     setIsRightPanelOpen((prev) => !prev);
-  };
-
-  const displayContent = (type) => {
-    const schema = schemaMap[type];
-    if (!schema)
-      return (
-        <div
-          style={{
-            padding: "10px 20px",
-          }}
-        >
-          <p>We are working on this document type</p>
-        </div>
-      );
-
-    return (
-      <GenericInputFields
-        data={jsonData}
-        schema={schema}
-        setHoveredKey={setHoveredKey}
-      />
-    );
   };
 
   return (
@@ -55,23 +31,10 @@ const MainLayout = () => {
       className="flex flex-col md:flex-row gap-4 p-4 bg-gray-50 overflow-hidden"
       style={{
         padding: "10px 20px",
-        // marginTop: "3%" "To hide the header"
       }}
     >
       {/* Left Side - PViewer */}
       <div className="w-full md:w-1/2">
-        {/* <div className="flex flex-row justify-between items-center mb-2 px-2">
-          <p>
-            Loan ID: <b style={{ color: themeStyle.primary }}>{"9014960"}</b>
-          </p>
-          <p>
-            Borrower Name:{" "}
-            <b style={{ color: themeStyle.primary }}>
-              {extractionData?.["Account Holder"] || "BOWWEN F DIAMOND"}
-            </b>
-          </p>
-        </div> */}
-
         <div className="border rounded-2xl shadow-md p-4 bg-white">
           <PViewer
             hoveredKey={hoveredKey}
@@ -124,7 +87,10 @@ const MainLayout = () => {
                 }
               />
             </div>
-            {displayContent(selectedDocType)}
+            <GenericInputFields
+              data={jsonData}
+              setHoveredKey={setHoveredKey}
+            />
           </div>
         </div>
 

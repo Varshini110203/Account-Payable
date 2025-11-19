@@ -3,14 +3,13 @@ import PDFViewer from "../PDFViewer/PDFViewer";
 import {
   NextOutline,
   PreviousOutline,
-  Rotate,
   WatsonHealthZoomPan,
   ZoomIn,
   ZoomOut,
   ZoomReset,
 } from "@carbon/icons-react";
-import { Tooltip } from "carbon-components-react";
 import { UserContext } from "../../context/UserContext.jsx";
+import PDF from "../../data/AT&T Bill_Inv 8821934010_20250721113143004.pdf";
 
 const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
   const { selectedDocType } = useContext(UserContext);
@@ -20,7 +19,7 @@ const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
   const [rotation, setRotation] = useState(0);
   const [isPanning, setIsPanning] = useState(false);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
-  const [PDFLoad, setPDFLoad] = useState("/sample.pdf");
+  const [PDFLoad, setPDFLoad] = useState(PDF); // Default to invoice PDF
 
   const handleZoomIn = () => setZoom((z) => Math.min(z + 0.2, 3));
   const handleZoomOut = () => setZoom((z) => Math.max(z - 0.2, 0.5));
@@ -35,11 +34,6 @@ const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
     ) {
       setPageNumber(hoveredKey.pageNum);
     }
-
-    // Cleanup: reset to page 1 when hover ends
-    // return () => {
-    //   setPageNumber(1);
-    // };
   }, [hoveredKey?.pageNum]);
 
   useEffect(() => {
@@ -52,32 +46,12 @@ const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
 
   const handlePDFChange = () => {
     switch (selectedDocType) {
-      case "Bank Statement":
-        setPDFLoad("/3188332/pdf/ic_3188332_bankstatement1.pdf");
-        break;
-      case "Paystub":
-        setPDFLoad("/3188332/pdf/ic_3188332_paystub.pdf");
-        break;
-      case "W2":
-        setPDFLoad("/3188332/pdf/ic_3188332_w2.pdf");
-        break;
-      case "Schedule E":
-        setPDFLoad("");
-        break;
-      case "Credit Report":
-        setPDFLoad("/3188332/pdf/ic_3188332_creditreport.pdf");
-        break;
-      case "VVOE":
-        setPDFLoad("");
-        break;
-      case "WVOE":
-        setPDFLoad("/3188332/pdf/ic_3188332_wvoe.pdf");
-        break;
-      case "1040":
-        setPDFLoad("/1040/pdf/31883324_1.pdf");
+      case "Invoice":
+        // Set your invoice PDF path here
+        setPDFLoad(PDF);
         break;
       default:
-        setPDFLoad("/3188332/pdf/ic_3188332_paystub.pdf");
+        setPDFLoad(PDF); // Default to invoice
         break;
     }
     try {
@@ -129,18 +103,13 @@ const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
         }}
       >
         <div style={{ display: "flex", gap: "1rem" }}>
-          {/* <Tooltip autoAlign label={'Zoom In'} closeOnActivation={false}> */}
-          {/* </Tooltip> */}
           <ZoomIn onClick={handleZoomIn} />
           <ZoomOut onClick={handleZoomOut} />
           <WatsonHealthZoomPan onClick={togglePan} />
-          {/* <Rotate onClick={handleRotate} /> */}
           {showResetButton && <ZoomReset onClick={handleReset} />}
         </div>
         <div
           style={{
-            // display: "flex",
-            // justifyContent: "center",
             gap: "1rem",
             display: "flex",
             marginTop: "10px",

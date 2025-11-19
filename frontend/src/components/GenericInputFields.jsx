@@ -1,15 +1,25 @@
 import { Accordion, AccordionItem, TextInput } from "carbon-components-react";
-
 import { useEffect, useState } from "react";
+import PDFViewer from "./PDFViewer/PDFViewer";
 
-const GenericInputFields = ({ data, schema, setHoveredKey }) => {
-  const extractionData = data?.extraction_json || {};
-
+const GenericInputFields = ({ data, setHoveredKey }) => {
+  const extractionData = data?.extracted_data?.documents?.[0] || {};
   const [formData, setFormData] = useState(extractionData);
 
   useEffect(() => {
     setFormData(extractionData);
   }, [extractionData]);
+
+  const getPageNumberFromField = (field) => {
+    if (!field?.bounding_regions?.[0]) return 1;
+    
+    const boundingRegion = field.bounding_regions[0];
+    if (typeof boundingRegion === 'string') {
+      const pageMatch = boundingRegion.match(/pageNumber':\s*(\d+)/);
+      return pageMatch ? parseInt(pageMatch[1]) : 1;
+    }
+    return boundingRegion.pageNumber || 1;
+  };
 
   const handleMouseEnter = (key, pageNum) => {
     if (key && pageNum != null) {
@@ -22,148 +32,128 @@ const GenericInputFields = ({ data, schema, setHoveredKey }) => {
   };
 
   const handleInputChange = (field, value) => {
-    const oldValue = formData[field];
-
-    const newValue =
-      typeof oldValue === "object" && oldValue !== null && "value" in oldValue
-        ? { ...oldValue, value }
-        : value;
-
     setFormData((prev) => ({
       ...prev,
-
-      [field]: newValue,
+      fields: {
+        ...prev.fields,
+        [field]: {
+          ...prev.fields?.[field],
+          content: value
+        }
+      }
     }));
   };
 
-  const handleSectionChange = (index, field, value) => {
-    const sectionData = [...(formData[schema.sectionKey] || [])];
-
-    if (!sectionData[index]) sectionData[index] = {};
-
-    const oldFieldValue = sectionData[index][field];
-
-    sectionData[index][field] =
-      typeof oldFieldValue === "object" &&
-      oldFieldValue !== null &&
-      "value" in oldFieldValue
-        ? { ...oldFieldValue, value }
-        : value;
+  const handleItemChange = (index, field, value) => {
+    const updatedItems = [...(formData.items || [])];
+    if (!updatedItems[index]) updatedItems[index] = { fields: {} };
+    
+    updatedItems[index].fields[field] = {
+      ...updatedItems[index].fields?.[field],
+      content: value
+    };
 
     setFormData((prev) => ({
       ...prev,
-
-      [schema.sectionKey]: sectionData,
+      items: updatedItems,
     }));
   };
 
-  const flatFields = schema.flatFields || [];
+  const fields = formData?.fields || {};
+  const items = formData?.items || [];
 
-  const sectionData = formData[schema.sectionKey] || [];
-
-  const titleField = schema.sectionTitleField;
+  // Define which fields to display
+  const displayFields = [
+    "VendorName",
+    "VendorAddress", 
+    "VendorPhoneNumber",
+    "CustomerName",
+    "CustomerId",
+    "InvoiceId",
+    "InvoiceDate",
+    "InvoiceTotal",
+    "DueDate"
+  ];
 
   return (
     <div
       style={{
         padding: "10px 20px",
-
+        marginTop: "1%",
         display: "flex",
-
         flexDirection: "column",
-
         gap: "15px",
+        height: "85dvh",
+        overflowY: "auto",
       }}
     >
-      {flatFields.map((field) => (
-        <div
-          key={field}
-          id={`json-${field}`}
-          onMouseEnter={() => {
-            let coordinatesData =
-              data.extraction_json_with_coordinates || data.extraction_json;
+      {/* Document Information Fields */}
+      {displayFields.map((field) => {
+        const fieldData = fields[field];
+        const pageNum = getPageNumberFromField(fieldData);
+        
+        return (
+          <div
+            key={field}
+            id={`json-${field}`}
+            onMouseEnter={() => handleMouseEnter(field, pageNum)}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              backgroundColor: fieldData ? 'transparent' : '#f5f5f5',
+              padding: '5px',
+              borderRadius: '4px'
+            }}
+          >
+            <TextInput
+              id={field.toLowerCase().replace(/\s+/g, "-")}
+              type="text"
+              labelText={field.replace(/([A-Z])/g, " $1").trim()}
+              value={fieldData?.content || fieldData?.value || ""}
+              onChange={(e) => handleInputChange(field, e.target.value)}
+              disabled={!fieldData}
+              helperText={fieldData ? `Page ${pageNum}` : 'Field not detected in PDF'}
+            />
+          </div>
+        );
+      })}
 
-            const coords = coordinatesData?.[field]?.coordinates;
-
-            if (coords == null) return;
-
-            handleMouseEnter(field, coordinatesData?.[field]?.page_num);
-          }}
-          onMouseLeave={handleMouseLeave}
-        >
-          <TextInput
-            id={field.toLowerCase().replace(/\s+/g, "-")}
-            type="text"
-            labelText={field}
-            value={
-              typeof formData[field] === "object"
-                ? formData[field]?.value || ""
-                : formData[field] || ""
-            }
-            onChange={(e) => handleInputChange(field, e.target.value)}
-          />
-        </div>
-      ))}
-
+      {/* Line Items */}
       <Accordion>
-        {sectionData.map((entry, index) => {
-          const dynamicTitleRaw = titleField ? entry?.[titleField] : null;
-
-          const dynamicTitle =
-            typeof dynamicTitleRaw === "object" && dynamicTitleRaw !== null
-              ? dynamicTitleRaw.value || `${schema.sectionTitle} ${index + 1}`
-              : dynamicTitleRaw || `${schema.sectionTitle} ${index + 1}`;
-
-          return (
-            <AccordionItem
-              key={`${schema.sectionKey}-${index}`}
-              title={dynamicTitle}
-            >
-              {schema.sectionFields.map((field) => (
+        {items.map((item, index) => (
+          <AccordionItem
+            key={`item-${index}`}
+            title={item.fields?.Description?.content || `Item ${index + 1}`}
+          >
+            {["Description", "Amount"].map((field) => {
+              const fieldData = item.fields?.[field];
+              const pageNum = getPageNumberFromField(fieldData);
+              
+              return (
                 <div
                   key={`${field}-${index}`}
                   id={`json-${field}-${index}`}
-                  onMouseEnter={() => {
-                    let coordinatesData =
-                      data.extraction_json_with_coordinates ||
-                      data.extraction_json;
-
-                    const coords =
-                      coordinatesData?.[schema.sectionKey]?.[index]?.[field]
-                        ?.coordinates ||
-                      coordinatesData?.[schema.sectionKey]?.[index]
-                        ?.coordinates;
-
-                    if (coords == null) return;
-
-                    handleMouseEnter(
-                      `${field}-${index}`,
-
-                      coordinatesData?.[schema.sectionKey]?.[index]?.[field]
-                        ?.page_num ||
-                        coordinatesData?.[schema.sectionKey]?.[index]?.page_num
-                    );
-                  }}
+                  onMouseEnter={() => handleMouseEnter(`${field}-${index}`, pageNum)}
                   onMouseLeave={handleMouseLeave}
+                  style={{
+                    backgroundColor: fieldData ? 'transparent' : '#f5f5f5',
+                    padding: '5px',
+                    borderRadius: '4px'
+                  }}
                 >
                   <TextInput
                     id={`${field.toLowerCase()}-${index}`}
                     type="text"
                     labelText={field.replace(/([A-Z])/g, " $1").trim()}
-                    value={
-                      typeof entry[field] === "object"
-                        ? entry[field]?.value || ""
-                        : entry[field] || ""
-                    }
-                    onChange={(e) =>
-                      handleSectionChange(index, field, e.target.value)
-                    }
+                    value={fieldData?.content || fieldData?.value || ""}
+                    onChange={(e) => handleItemChange(index, field, e.target.value)}
+                    disabled={!fieldData}
+                    helperText={fieldData ? `Page ${pageNum}` : 'Field not detected in PDF'}
                   />
                 </div>
-              ))}
-            </AccordionItem>
-          );
-        })}
+              );
+            })}
+          </AccordionItem>
+        ))}
       </Accordion>
     </div>
   );
