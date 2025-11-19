@@ -74,3 +74,6 @@ logs/
 # Testing
 .coverage
 .pytest_cache/
+
+uploads/
+user_json_storage/
