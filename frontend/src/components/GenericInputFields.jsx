@@ -1,6 +1,5 @@
 import { Accordion, AccordionItem, TextInput } from "carbon-components-react";
 import { useEffect, useState } from "react";
-import PDFViewer from "./PDFViewer/PDFViewer";
 
 const GenericInputFields = ({ data, setHoveredKey }) => {
   const extractionData = data?.extracted_data?.documents?.[0] || {};

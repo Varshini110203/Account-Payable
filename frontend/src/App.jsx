@@ -1,17 +1,38 @@
-// import Header from "./components/Header/Header";
-// import { UserContext } from "./context/UserContext.jsx";
-import React from "react";
-
+import React, { useState } from "react";
 import MainLayout from "./components/MainLayout.jsx";
+import UploadPage from "./components/UploadModal/UploadPage.jsx";
+import { UserProvider } from "./context/UserContext.jsx";
 
 const App = () => {
-  // const {  } = useContext(UserContext);
+  const [currentPage, setCurrentPage] = useState("upload");
+  const [jsonData, setJsonData] = useState(null);
+
+  const handleFileProcessed = (result) => {
+    if (result.success && result.data) {
+      setJsonData(result.data);
+      setCurrentPage("main");
+    }
+  };
+
+  const handleBackToUpload = () => {
+    setCurrentPage("upload");
+    setJsonData(null);
+  };
 
   return (
-    <div className="flex flex-col h-screen">
-      {/* <Header /> */}
-      <MainLayout />
-    </div>
+    <UserProvider>
+      <div className="flex flex-col h-screen">
+        {currentPage === "upload" ? (
+          <UploadPage onFileProcessed={handleFileProcessed} />
+        ) : (
+          <MainLayout 
+            onBackToUpload={handleBackToUpload} 
+            jsonData={jsonData}
+            setJsonData={setJsonData}
+          />
+        )}
+      </div>
+    </UserProvider>
   );
 };
 

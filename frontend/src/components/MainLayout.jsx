@@ -1,26 +1,25 @@
 import { schemaMap } from "../config/schemaMap.js";
-import { Dropdown } from "carbon-components-react";
-import React, { useContext, useState } from "react";
-import { UserContext } from "../context/UserContext.jsx";
-import { RightPanelCloseFilled, RightPanelOpen } from "@carbon/icons-react";
+import { Dropdown, Button } from "carbon-components-react";
+import React, { useState } from "react";
+import { RightPanelCloseFilled, RightPanelOpen, ArrowLeft } from "@carbon/icons-react";
 
 import Xarrow from "react-xarrows";
 import JViewer from "./JViewer/JViewer.jsx";
 import PViewer from "./PViewer/Pviewer.jsx";
 import GenericInputFields from "./GenericInputFields.jsx";
 
-const MainLayout = () => {
-  const {
-    themeStyle,
-    jsonData,
-    selectedDocType,
-    setSelectedDocType,
-    DOC_TYPES,
-  } = useContext(UserContext);
-
+const MainLayout = ({ onBackToUpload, jsonData, setJsonData }) => {
+  const [selectedDocType, setSelectedDocType] = useState("Invoice");
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(false);
   const [hoveredKey, setHoveredKey] = useState({ key: null, pageNum: null });
   const [pageRenderReady, setPageRenderReady] = useState(false);
+
+  const themeStyle = {
+    primary: "#0062ff",
+    secondary: "#6f6f6f"
+  };
+
+  const DOC_TYPES = ["Invoice", "Receipt", "Purchase Order"];
 
   const toggleRightPanel = () => {
     setIsRightPanelOpen((prev) => !prev);
@@ -33,6 +32,18 @@ const MainLayout = () => {
         padding: "10px 20px",
       }}
     >
+      {/* Back Button
+      <div className="w-full mb-4">
+        <Button
+          kind="secondary"
+          renderIcon={ArrowLeft}
+          onClick={onBackToUpload}
+          style={{ marginBottom: "10px" }}
+        >
+          Back to Upload
+        </Button>
+      </div> */}
+
       {/* Left Side - PViewer */}
       <div className="w-full md:w-1/2">
         <div className="border rounded-2xl shadow-md p-4 bg-white">

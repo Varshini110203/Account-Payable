@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import PDFViewer from "../PDFViewer/PDFViewer";
 import {
   NextOutline,
@@ -8,23 +8,51 @@ import {
   ZoomOut,
   ZoomReset,
 } from "@carbon/icons-react";
-import { UserContext } from "../../context/UserContext.jsx";
-import PDF from "../../data/AT&T Bill_Inv 8821934010_20250721113143004.pdf";
 
 const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
-  const { selectedDocType } = useContext(UserContext);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [zoom, setZoom] = useState(1);
   const [rotation, setRotation] = useState(0);
   const [isPanning, setIsPanning] = useState(false);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
-  const [PDFLoad, setPDFLoad] = useState(PDF); // Default to invoice PDF
+  const [pdfFile, setPdfFile] = useState(null);
 
   const handleZoomIn = () => setZoom((z) => Math.min(z + 0.2, 3));
   const handleZoomOut = () => setZoom((z) => Math.max(z - 0.2, 0.5));
   const handleRotate = () => setRotation((r) => (r + 90) % 360);
   const togglePan = () => setIsPanning((p) => !p);
+
+  // Extract PDF data from the processed JSON
+  useEffect(() => {
+    if (data && data.preap_metadata && data.preap_metadata.uploaded_file) {
+      const { file_id } = data.preap_metadata.uploaded_file;
+      loadUploadedPdf(file_id);
+    }
+  }, [data]);
+
+  const loadUploadedPdf = async (fileId) => {
+    try {
+      const response = await fetch(`http://localhost:8000/pdf/${fileId}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch PDF');
+      }
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+      setPdfFile(url);
+    } catch (error) {
+      console.error("Error loading uploaded PDF:", error);
+    }
+  };
+
+  // Clean up blob URL on unmount
+  useEffect(() => {
+    return () => {
+      if (pdfFile) {
+        URL.revokeObjectURL(pdfFile);
+      }
+    };
+  }, [pdfFile]);
 
   useEffect(() => {
     if (
@@ -39,26 +67,6 @@ const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
   useEffect(() => {
     setPageRenderReady(false);
   }, [pageNumber]);
-
-  useEffect(() => {
-    handlePDFChange();
-  }, [selectedDocType]);
-
-  const handlePDFChange = () => {
-    switch (selectedDocType) {
-      case "Invoice":
-        // Set your invoice PDF path here
-        setPDFLoad(PDF);
-        break;
-      default:
-        setPDFLoad(PDF); // Default to invoice
-        break;
-    }
-    try {
-    } catch (ex) {
-      console.log("Error in PDFChange", ex);
-    }
-  };
 
   const handleReset = () => {
     setZoom(1);
@@ -91,6 +99,27 @@ const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
   const showResetButton =
     zoom !== 1 || rotation !== 0 || offset.x !== 0 || offset.y !== 0;
 
+  // Show placeholder if no PDF is available
+  if (!data) {
+    return (
+      <div
+        style={{
+          height: "85dvh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          gap: "1rem",
+          color: "#6f6f6f",
+        }}
+      >
+        <div style={{ fontSize: "48px" }}>📄</div>
+        <h3>No PDF Uploaded</h3>
+        <p>Upload a PDF invoice to see it displayed here</p>
+      </div>
+    );
+  }
+
   return (
     <React.Fragment>
       <div
@@ -103,26 +132,29 @@ const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
         }}
       >
         <div style={{ display: "flex", gap: "1rem" }}>
-          <ZoomIn onClick={handleZoomIn} />
-          <ZoomOut onClick={handleZoomOut} />
-          <WatsonHealthZoomPan onClick={togglePan} />
-          {showResetButton && <ZoomReset onClick={handleReset} />}
+          <ZoomIn onClick={handleZoomIn} style={{ cursor: "pointer" }} />
+          <ZoomOut onClick={handleZoomOut} style={{ cursor: "pointer" }} />
+          <WatsonHealthZoomPan onClick={togglePan} style={{ cursor: "pointer" }} />
+          {showResetButton && <ZoomReset onClick={handleReset} style={{ cursor: "pointer" }} />}
         </div>
         <div
           style={{
             gap: "1rem",
             display: "flex",
             marginTop: "10px",
+            alignItems: "center",
           }}
         >
           <PreviousOutline
             onClick={() => setPageNumber((p) => Math.max(p - 1, 1))}
+            style={{ cursor: "pointer" }}
           />
           <span>
-            Page {pageNumber} of {numPages}
+            Page {pageNumber} of {numPages || "?"}
           </span>
           <NextOutline
-            onClick={() => setPageNumber((p) => Math.min(p + 1, numPages))}
+            onClick={() => setPageNumber((p) => Math.min(p + 1, numPages || 1))}
+            style={{ cursor: "pointer" }}
           />
         </div>
       </div>
@@ -144,7 +176,7 @@ const PViewer = ({ hoveredKey, data, setPageRenderReady }) => {
           }}
         >
           <PDFViewer
-            file={PDFLoad}
+            file={pdfFile}
             numPages={numPages}
             setNumPages={setNumPages}
             pageNumber={pageNumber}
