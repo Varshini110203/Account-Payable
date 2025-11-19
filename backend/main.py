@@ -8,6 +8,7 @@ import uuid
 from pathlib import Path
 from dotenv import load_dotenv
 import uvicorn
+import json
 
 # Import from your existing invoice_ex.py
 from invoice_ex import InvoiceProcessor
@@ -20,6 +21,10 @@ app = FastAPI(title="Invoice Processing API", version="1.0.0")
 # Create uploads directory
 UPLOAD_DIR = Path("uploads")
 UPLOAD_DIR.mkdir(exist_ok=True)
+
+# Create JSON output directory
+JSON_OUTPUT_DIR = Path("processed_json")
+JSON_OUTPUT_DIR.mkdir(exist_ok=True)
 
 # CORS middleware
 app.add_middleware(
@@ -78,12 +83,25 @@ async def upload_invoice(file: UploadFile = File(...)):
                     "file_size": file_size
                 }
                 
+                # Save JSON locally
+                json_filename = f"{file_id}_{original_filename}.json"
+                json_path = JSON_OUTPUT_DIR / json_filename
+                
+                try:
+                    with open(json_path, 'w', encoding='utf-8') as f:
+                        json.dump(preap_data, f, indent=2, ensure_ascii=False, default=str)
+                    print(f"JSON saved locally: {json_path}")
+                except Exception as json_error:
+                    print(f"Failed to save JSON locally: {json_error}")
+                
                 return {
                     "success": True,
                     "data": preap_data,
                     "message": "Invoice processed successfully",
                     "filename": original_filename,
-                    "file_id": file_id
+                    "file_id": file_id,
+                    "json_saved": True,
+                    "json_path": str(json_path)
                 }
             else:
                 # Clean up saved file if processing failed
@@ -121,6 +139,50 @@ async def get_pdf(file_id: str):
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving PDF: {str(e)}")
+
+@app.get("/download-json/{file_id}")
+async def download_json(file_id: str):
+    """
+    Download processed JSON file by file ID
+    """
+    try:
+        # Find the JSON file by ID
+        json_files = list(JSON_OUTPUT_DIR.glob(f"{file_id}_*"))
+        if not json_files:
+            raise HTTPException(status_code=404, detail="JSON file not found")
+        
+        json_path = json_files[0]
+        return FileResponse(
+            path=json_path,
+            filename=json_path.name,
+            media_type='application/json'
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error retrieving JSON: {str(e)}")
+
+@app.get("/list-json")
+async def list_json_files():
+    """
+    List all processed JSON files
+    """
+    try:
+        json_files = []
+        for json_path in JSON_OUTPUT_DIR.glob("*.json"):
+            json_files.append({
+                "filename": json_path.name,
+                "file_id": json_path.name.split('_')[0],
+                "original_filename": '_'.join(json_path.name.split('_')[1:]).replace('.json', ''),
+                "size": json_path.stat().st_size,
+                "modified": json_path.stat().st_mtime
+            })
+        
+        return {
+            "success": True,
+            "files": json_files,
+            "count": len(json_files)
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error listing JSON files: {str(e)}")
 
 @app.get("/health")
 async def health_check():

@@ -6,10 +6,16 @@ import { UserProvider } from "./context/UserContext.jsx";
 const App = () => {
   const [currentPage, setCurrentPage] = useState("upload");
   const [jsonData, setJsonData] = useState(null);
+  const [processingInfo, setProcessingInfo] = useState(null);
 
   const handleFileProcessed = (result) => {
     if (result.success && result.data) {
       setJsonData(result.data);
+      setProcessingInfo({
+        fileId: result.fileId,
+        filename: result.filename,
+        jsonSaved: result.jsonSaved
+      });
       setCurrentPage("main");
     }
   };
@@ -17,6 +23,7 @@ const App = () => {
   const handleBackToUpload = () => {
     setCurrentPage("upload");
     setJsonData(null);
+    setProcessingInfo(null);
   };
 
   return (
@@ -29,6 +36,7 @@ const App = () => {
             onBackToUpload={handleBackToUpload} 
             jsonData={jsonData}
             setJsonData={setJsonData}
+            processingInfo={processingInfo}
           />
         )}
       </div>
