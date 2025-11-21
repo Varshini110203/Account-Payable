@@ -84,7 +84,6 @@ const GenericInputFields = ({ data, setHoveredKey }) => {
         gap: "15px",
         height: "85dvh",
         overflowY: "auto",
-        
       }}
     >
       {/* Document Information Fields */}
@@ -94,27 +93,26 @@ const GenericInputFields = ({ data, setHoveredKey }) => {
         
         return (
           <div
-  key={field}
-  id={`json-${field}`}
-  onMouseEnter={() => handleMouseEnter(field, pageNum)}
-  onMouseLeave={handleMouseLeave}
-  style={{
-    backgroundColor: 'transparent',
-    padding: '5px',
-    borderRadius: '4px'
-  }}
->
-  <TextInput
-    id={field.toLowerCase().replace(/\s+/g, "-")}
-    type="text"
-    labelText={field.replace(/([A-Z])/g, " $1").trim()}
-    value={fieldData?.content || fieldData?.value || " "}
-    onChange={(e) => handleInputChange(field, e.target.value)}
-    disabled={false}                   // ALWAYS allow input
-    helperText={fieldData ? `Page ${pageNum}` : ''}
-  />
-</div>
-
+            key={field}
+            id={`json-${field}`}
+            onMouseEnter={() => handleMouseEnter(field, pageNum)}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              backgroundColor: fieldData ? 'transparent' : '#f5f5f5',
+              padding: '5px',
+              borderRadius: '4px'
+            }}
+          >
+            <TextInput
+              id={field.toLowerCase().replace(/\s+/g, "-")}
+              type="text"
+              labelText={field.replace(/([A-Z])/g, " $1").trim()}
+              value={fieldData?.content || fieldData?.value || ""}
+              onChange={(e) => handleInputChange(field, e.target.value)}
+              disabled={!fieldData}
+              helperText={fieldData ? `Page ${pageNum}` : 'Field not detected in PDF'}
+            />
+          </div>
         );
       })}
 
@@ -147,8 +145,8 @@ const GenericInputFields = ({ data, setHoveredKey }) => {
                     labelText={field.replace(/([A-Z])/g, " $1").trim()}
                     value={fieldData?.content || fieldData?.value || ""}
                     onChange={(e) => handleItemChange(index, field, e.target.value)}
-                    disabled={false}
-                   helperText={fieldData ? `Page ${pageNum}` : ''}
+                    disabled={!fieldData}
+                    helperText={fieldData ? `Page ${pageNum}` : 'Field not detected in PDF'}
                   />
                 </div>
               );

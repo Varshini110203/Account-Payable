@@ -45,6 +45,7 @@ class InvoiceProcessor:
             # Show progress for long-running operations
             while not poller.done():
                 print(" Still processing...")
+                time.sleep(2)
             
             analyze_result = poller.result()
             
@@ -205,7 +206,7 @@ def main():
     load_dotenv(find_dotenv())
     
     # Configuration
-    input_folder = Path("Finance_AP\AP Invoice Samples")
+    input_folder = Path("Finance_AP/AP Invoice Samples")
     output_folder = Path("preap_output")
     
     # Validate configuration
@@ -235,7 +236,12 @@ def main():
     total_time = time.time() - start_time
     
     # Print final summary
-    print (f"Total PDFs: {results['total_files']} processed")
+    print(f"\n=== PROCESSING SUMMARY ===")
+    print(f"Total files: {results['total_files']}")
+    print(f"Successful: {results['successful']}")
+    print(f"Failed: {results['failed']}")
+    print(f"Skipped: {results['skipped']}")
+    print(f"Total time: {total_time:.2f} seconds")
 
 
 if __name__ == "__main__":

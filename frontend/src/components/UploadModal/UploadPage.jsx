@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from 'react';
 import { 
   Button, 
@@ -25,58 +24,62 @@ const UploadPage = ({ onFileProcessed }) => {
     setTimeout(() => setNotification({ show: false }), 5000);
   };
 
-  // UploadPage.jsx - Update the handleFileSelect function
-const handleFileSelect = async (file) => {
-  if (!file) return;
+  const handleFileSelect = async (file) => {
+    if (!file) return;
 
-  // Validate file type
-  if (!file.type.includes('pdf') && !file.name.toLowerCase().endsWith('.pdf')) {
-    showNotification('error', 'Invalid File Type', 'Please upload a PDF file');
-    return;
-  }
-
-  // Validate file size (10MB limit)
-  if (file.size > 10 * 1024 * 1024) {
-    showNotification('error', 'File Too Large', 'File size must be less than 10MB');
-    return;
-  }
-
-  setIsUploading(true);
-
-  try {
-    const formData = new FormData();
-    formData.append('file', file);
-
-    const response = await fetch('http://localhost:8000/upload-invoice', {
-      method: 'POST',
-      body: formData,
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+    // Validate file type
+    if (!file.type.includes('pdf') && !file.name.toLowerCase().endsWith('.pdf')) {
+      showNotification('error', 'Invalid File Type', 'Please upload a PDF file');
+      return;
     }
 
-    const result = await response.json();
+    // Validate file size (10MB limit)
+    if (file.size > 10 * 1024 * 1024) {
+      showNotification('error', 'File Too Large', 'File size must be less than 10MB');
+      return;
+    }
 
-    if (result.success) {
-      showNotification('success', 'Success', 'Invoice processed successfully');
-      // Pass the processed data to parent component
-      onFileProcessed({
-        success: true,
-        data: result.data || result // Adjust based on your backend response structure
+    setIsUploading(true);
+
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+
+      const response = await fetch('http://localhost:8000/upload-invoice', {
+        method: 'POST',
+        body: formData,
       });
-    } else {
-      showNotification('error', 'Processing Failed', result.error || 'Failed to process invoice');
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.detail || `HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+
+      if (result.success) {
+        showNotification('success', 'Success', 'Invoice processed successfully');
+        
+        // Pass the processed data to parent component with additional info
+        onFileProcessed({
+          success: true,
+          data: result.data,
+          fileId: result.file_id,
+          filename: result.filename,
+          jsonSaved: result.json_saved || false
+        });
+      } else {
+        showNotification('error', 'Processing Failed', result.error || 'Failed to process invoice');
+      }
+    } catch (error) {
+      console.error('Upload error:', error);
+      showNotification('error', 'Upload Failed', 
+        error.message || 'Failed to connect to server. Please make sure the backend is running.'
+      );
+    } finally {
+      setIsUploading(false);
     }
-  } catch (error) {
-    console.error('Upload error:', error);
-    showNotification('error', 'Upload Failed', 
-      error.message || 'Failed to connect to server. Please make sure the backend is running.'
-    );
-  } finally {
-    setIsUploading(false);
-  }
-};
+  };
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
@@ -188,6 +191,7 @@ const handleFileSelect = async (file) => {
                   </Button>
                   <div className="upload-hint">
                     <p>Supported format: PDF • Maximum size: 10MB</p>
+                    <p className="text-sm mt-1">JSON will be automatically saved locally</p>
                   </div>
                 </div>
               )}
